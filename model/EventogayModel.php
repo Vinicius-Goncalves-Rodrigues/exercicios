@@ -12,7 +12,7 @@ private $pdo;
         $stmt->execute([$id, $nome, $datagay, $idade, $acompanhado, $autorizado]);
     }
     public function checaridade($id){
-        $sql = $sql = "INSERT INTO eventogay where id = ?";
+        $sql = "SELECT * FROM eventogay where id = ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$id]);
         $idade = $stmt["idade"];
