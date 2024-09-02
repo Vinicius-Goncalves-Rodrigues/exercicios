@@ -3,7 +3,7 @@
 //Configurações basicas
 
 $host = 'localhost';
-$dbname = 'olimpiadas';
+$dbname = 'exer';
 $username = 'root';
 $password = '';
 
