@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/aluno2/xampp/htdocs/olinpiadas-mvc/model/EventogayModel.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/model/EventogayModel.php';
 class EventogayController{
 private $eventogayModel;
 
