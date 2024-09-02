@@ -9,10 +9,7 @@
    <h1>Cadastrar gay</h1>
    <form method="post">
     <input type="text" name="nome" placeholder="nome">
-    <input type="text" name="datagay" placeholder="datagay">
-    <input type="text" name="idade" placeholder="idade">
-    <input type="text" name="acompanhado" placeholder="acompanhado">
-    <input type="text" name="autorizado" placeholder="autorizado">
+    <input type="number" name="idade" placeholder="idade">
 
     <button type="submit">Cadastrar</button>
    </form> 
@@ -25,13 +22,11 @@ require_once 'C:/aluno2/xampp/htdocs/exercicios/config.php';
 require_once 'C:/aluno2/xampp/htdocs/exercicios/controller/EventogayController.php';
 
 if(isset($_POST["nome"]) &&
- isset($_POST["datagay"]) &&
- isset($_POST["idade"]) &&
- isset($_POST["acompanhado"]) &&
- isset($_POST["autorizado"])){
-    $EventogayController = new EventogayController($pdo);
+ isset($_POST["idade"])){
+    $eventogayController = new EventogayController($pdo);
 
-    $EventogayController->cadastrar($_POST["nome"], $_POST["datagay"], $_POST["idade"],$_POST["acompanhado"], $_POST["autorizado"]);
+    $eventogayController->Cadastrar($_POST["nome"], $_POST["idade"]);
+    
 
     header("Location: index.php");
  }
