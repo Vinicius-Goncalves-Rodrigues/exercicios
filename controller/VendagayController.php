@@ -17,7 +17,7 @@ private $vendagayModel;
 
     public function exibirlistarVendagay(){
         $vendagays = $this->vendagayModel->listarVendagay();
-        include 'view/vendagay/listar.php';
+        include 'C:/aluno2/xampp/htdocs/exercicios/view/vendagay/listar.php';
     }
 
 }  

@@ -20,7 +20,7 @@ private $eventogayModel;
 
     public function exibirlistarEventogay(){
         $eventogays = $this->eventogayModel->listarEventogay();
-        include 'view/eventogay/listar.php';
+        include 'C:\aluno2\xampp\htdocs\exercicios\view\eventogay\listar.php';
     }
 
 }   

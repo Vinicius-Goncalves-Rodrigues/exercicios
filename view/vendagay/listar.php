@@ -9,15 +9,3 @@ foreach($vendagays as $vendagay){
 <button><a href="view\vendagay\estoque">cadastar estoque</a></button>
 
 <br><br>
-
-<?php
-
-foreach($compragays as $compragay){
-    echo $$compragay["codigo"] . "<br>";
-    echo $$compragay["nome"] . "<br>";
-    echo $$compragay["quantidade"] . "<br>";
-}
-?>
-<button><a href="view\vendagay\estoque">cadastar</a></button>
-
-<br><br>
