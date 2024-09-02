@@ -7,8 +7,8 @@ private $eventogayModel;
         $this->eventogayModel = new EventogayModel($pdo);
     }
 
-    public function cadastrar($rua,$bairro,$numero,$cep,$cidade,$estado,$pais){
-        $this->eventogayModel->criarLocalidade($rua,$bairro,$numero,$cep,$cidade,$estado,$pais);
+    public function cadastrar($id, $nome, $datagay, $idade, $acompanhado, $autorizado){
+        $this->eventogayModel->cadastrar($id, $nome, $datagay, $idade, $acompanhado, $autorizado);
     }
 
     public function listarEventogay(){
