@@ -10,6 +10,9 @@ private $eventogayModel;
     public function cadastrar($id, $nome, $datagay, $idade, $acompanhado, $autorizado){
         $this->eventogayModel->cadastrar($id, $nome, $datagay, $idade, $acompanhado, $autorizado);
     }
+    public function checaridade($id){
+        $this->eventogayModel->checaridade($id);
+    }
 
     public function listarEventogay(){
         return $this->eventogayModel->listarEventogay();

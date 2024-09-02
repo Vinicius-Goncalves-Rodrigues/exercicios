@@ -11,6 +11,22 @@ private $pdo;
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$id, $nome, $datagay, $idade, $acompanhado, $autorizado]);
     }
+    public function checaridade($id){
+        $sql = $sql = "INSERT INTO eventogay where id = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$id]);
+        $idade = $stmt["idade"];
+        $aceitado = "NÃO";
+        $acompanhado = "NÃO";
+        if ($idade>=16){
+            $acompanhado = "SIM";
+            $aceitado = "SIM";
+        }
+        if ($idade>=18){
+            $acompanhado = "NÃO";
+            $aceitado = "SIM";
+        }
+    }
 
     public function listarEventogay(){
         $sql = "SELECT * FROM eventogay";
