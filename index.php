@@ -13,22 +13,4 @@ $esporteController = new EsporteController($pdo);
 $esporteController->exibirlistaEsportes();
 
 
-echo '<h1>Treinador</h1>';
-$TreinadorController = new TreinadorController($pdo);
-
-$TreinadorController->exibirlistaTreinador();
-
-echo '<h1>Competidor</h1>';
-$CompetidorController = new CompetidorController($pdo);
-
-$CompetidorController->exibirlistaCompetidor();
-
-echo '<h1>Localidade</h1>';
-$LocalidadeController = new LocalidadeController($pdo);
-
-$LocalidadeController->exibirlistaLocalidade();
-
-
-
-
 ?>
