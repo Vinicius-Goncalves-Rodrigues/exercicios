@@ -1,14 +1,14 @@
 <?php
 require_once 'C:/aluno2/xampp/htdocs/exercicios/model/CompragayModel.php';
 class CompragayController{
-private $compragayModel;
+private $CompragayModel;
 
     public function __construct($pdo){
-        $this->compragayModel = new CompragayModel($pdo);
+        $this->CompragayModel = new CompragayModel($pdo);
     }
 
-    public function estoque($id , $nome, $datacompra, $nomeproduto, $quantidade, $vendarealizada){
-        $this->CompragayModel->estoque($id , $nome, $datacompra, $nomeproduto, $quantidade, $vendarealizada);
+    public function vendas($id , $nome, $datacompra, $nomeproduto, $quantidade, $vendarealizada){
+        $this->CompragayModel->vendas($id , $nome, $datacompra, $nomeproduto, $quantidade, $vendarealizada);
     }
 
     public function listarCompragay(){
@@ -17,7 +17,7 @@ private $compragayModel;
 
     public function exibirlistarComprargay(){
         $compragays = $this->CompragayModel->listarCompragay();
-        include 'view/vendagay/listar.php';
+        include 'C:\aluno2\xampp\htdocs\exercicios\view\vendagay\compragay\listar.php';
     }
 
 } 

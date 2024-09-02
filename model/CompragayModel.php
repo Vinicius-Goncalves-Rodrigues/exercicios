@@ -6,7 +6,7 @@ private $pdo;
         $this->pdo = $pdo;
     }
 
-    public function cadastrar($id , $nome, $datacompra, $nomeproduto, $quantidade, $vendarealizada){
+    public function vendas($id , $nome, $datacompra, $nomeproduto, $quantidade, $vendarealizada){
         $sql = "INSERT INTO copragay(id , nome, datacompra, nomeproduto, quantidade, vendarealizada) VALUES (?, ?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$id , $nome, $datacompra, $nomeproduto, $quantidade, $vendarealizada]);
