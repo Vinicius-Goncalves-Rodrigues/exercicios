@@ -16,7 +16,7 @@ private $compragayModel;
     }
 
     public function exibirlistarComprargay(){
-        $vendagays = $this->COmpragayModel->listarCompragay();
+        $compragays = $this->CompragayModel->listarCompragay();
         include 'view/vendagay/listar.php';
     }
 
