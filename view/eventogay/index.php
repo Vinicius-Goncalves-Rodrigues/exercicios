@@ -5,4 +5,4 @@ require_once 'C:/aluno2/xampp/htdocs/exercicios/controller/EventogayController.p
 echo '<h1>gay</h1>';
 $eventogayController = new EventogayController($pdo);
 
-$eventogayController->listarEventogay();
+var_dump($eventogayController->listarEventogay());
