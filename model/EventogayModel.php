@@ -15,7 +15,7 @@ private $pdo;
         $sql = "SELECT * FROM eventogay where id = ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$id]);
-        $idade = $stmt["idade"];
+        $idade = $stmt->fetchAll(PDO::FETCH_ASSOC)["idade"];
         $autorizado = "NÃO";
         $acompanhado = "NÃO";
         if ($idade>=16){
