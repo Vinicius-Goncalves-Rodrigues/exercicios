@@ -1,32 +1,21 @@
 <?php
 
-class LocalidadeModel{
+class EventogayModel{
 private $pdo;
     public function __construct($pdo){
         $this->pdo = $pdo;
     }
 
-    public function cadastrar($rua,$bairro,$numero,$cep,$cidade,$estado,$pais){
-        $sql = "INSERT INTO localidade(rua,bairro,numero,cep,cidade,estado,pais) VALUES (?, ?, ?, ?, ?, ?, ?)";
+    public function cadastrar($id, $nome, $datagay, $idade, $acompanhado, $autorizado){
+        $sql = "INSERT INTO eventogay(id, nome, datagay, idade, acompanhado, autorizado) VALUES (?, ?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$rua,$bairro,$numero,$cep,$cidade,$estado,$pais]);
+        $stmt->execute([$id, $nome, $datagay, $idade, $acompanhado, $autorizado]);
     }
 
-    public function listarLocalidade(){
-        $sql = "SELECT * FROM localidade";
+    public function listarEventogay(){
+        $sql = "SELECT * FROM eventogay";
         $stmt =$this->pdo->query($sql);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function atualizarLocalidade($rua,$bairro,$numero,$cep,$cidade,$estado,$pais,$id_localidade){
-        $sql = "UPDATE localidade SET rua = ?, bairro = ?, numero = ?, cep = ?, cidade = ?, estado = ?, pais = ? WHERE id = ?";
-        $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$rua,$bairro,$numero,$cep,$cidade,$estado,$pais,$id_localidade]);
-    }
-
-    public function deletarLocalidade($id_localidade){
-        $sql = "DELETE FROM localidade WHERE id = ?";
-        $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$id_localidade]);
-    }
 }

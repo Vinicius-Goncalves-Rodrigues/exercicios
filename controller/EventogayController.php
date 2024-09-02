@@ -7,24 +7,17 @@ private $eventogayModel;
         $this->eventogayModel = new EventogayModel($pdo);
     }
 
-    public function criarLocalidade($rua,$bairro,$numero,$cep,$cidade,$estado,$pais){
-        $this->eventogayModel->criarLocalidade($rua,$bairro,$numero,$cep,$cidade,$estado,$pais);
+    public function criarEventogay($id, $nome, $datagay, $idade, $acompanhado, $autorizado){
+        $this->eventogayModel->criarEventogay($id, $nome, $datagay, $idade, $acompanhado, $autorizado);
     }
 
-    public function listarLocalidade(){
-        return $this->eventogayModel->listarLocalidade();
+    public function listarEventogay(){
+        return $this->eventogayModel->listarEventogay();
     }
 
-    public function exibirlistaLocalidade(){
-        $localidades = $this->eventogayModel->listarLocalidade();
-        include 'view/localidade/listar.php';
+    public function exibirlistarEventogay(){
+        $eventogays = $this->eventogayModel->listarEventogay();
+        include 'view/eventogay/listar.php';
     }
 
-    public function atualizarLocalidade($rua,$bairro,$numero,$cep,$cidade,$estado,$pais,$id_localidade){
-        $this->eventogayModel->atualizarLocalidade($rua,$bairro,$numero,$cep,$cidade,$estado,$pais,$id_localidade);
-    }
-
-    public function deletarLocalidade($id_localidade){
-        $this->eventogayModel->deletarLocalidade($id_localidade);
-    }
 }   
