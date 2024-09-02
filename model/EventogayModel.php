@@ -16,15 +16,15 @@ private $pdo;
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$id]);
         $idade = $stmt["idade"];
-        $aceitado = "NÃO";
+        $autorizado = "NÃO";
         $acompanhado = "NÃO";
         if ($idade>=16){
             $acompanhado = "SIM";
-            $aceitado = "SIM";
+            $autorizado = "SIM";
         }
         if ($idade>=18){
             $acompanhado = "NÃO";
-            $aceitado = "SIM";
+            $autorizado = "SIM";
         }
     }
 
