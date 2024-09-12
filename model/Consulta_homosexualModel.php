@@ -7,7 +7,7 @@ class Consulta_homosexualModel {
         $this->pdo = $pdo;
     }
 
-    public function reservar($nome_paciente, $nome_medico, $data_hora, $confirmado) {
+    public function reservar($nome_paciente, $nome_medico, $data_hora, $confirmado){
         $sql = "INSERT INTO consulta_homosexual (nome_paciente, nome_medico, data_hora, confirmado) VALUES (?,?,?,?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$nome_paciente, $nome_medico, $data_hora, $confirmado]);

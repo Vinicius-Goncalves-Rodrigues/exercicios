@@ -30,7 +30,7 @@ if(isset($_POST["nome_paciente"])){
 
     if(isset($reservado)){
       if($reservado == "SIM"){
-         echo "<h1>sua mesa ta boa</h1>";
+         echo "<h1>toma</h1>";
       }else{
          echo "<h1>se fudeu</h1>";
       }
