@@ -7,11 +7,11 @@ private $eventogayModel;
         $this->eventogayModel = new EventogayModel($pdo);
     }
 
-    public function cadastrar($id, $nome, $datagay, $idade, $acompanhado, $autorizado){
-        $this->eventogayModel->cadastrar($id, $nome, $datagay, $idade, $acompanhado, $autorizado);
+    public function Cadastrar($nome, $idade){
+        $this->eventogayModel->Cadastrar( $nome,$idade);
     }
-    public function checaridade($id){
-        $this->eventogayModel->checaridade($id);
+    public function checarIdade($id){
+        $this->eventogayModel->checarIdade($id);
     }
 
     public function listarEventogay(){
@@ -21,6 +21,9 @@ private $eventogayModel;
     public function exibirlistarEventogay(){
         $eventogays = $this->eventogayModel->listarEventogay();
         include 'C:\aluno2\xampp\htdocs\exercicios\view\eventogay\listar.php';
+    }
+    public function getLatestid(){
+        return $this->eventogayModel->getLatestid();
     }
 
 }   
