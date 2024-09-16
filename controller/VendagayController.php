@@ -7,7 +7,7 @@ private $vendagayModel;
         $this->vendagayModel = new VendagayModel($pdo);
     }
 
-    public function estoque($codigo , $nome, $quantidade){
+    public function estoque(){
         $this->vendagayModel->estoque($codigo , $nome, $quantidade);
     }
 

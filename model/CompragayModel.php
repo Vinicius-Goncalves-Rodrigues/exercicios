@@ -7,14 +7,14 @@ private $pdo;
     }
 
     public function vendas($id , $nome, $datacompra, $nomeproduto, $quantidade, $vendarealizada){
-        $sql = "INSERT INTO copragay(id , nome, datacompra, nomeproduto, quantidade, vendarealizada) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO compragay(id , nome, datacompra, nomeproduto, quantidade, vendarealizada) VALUES (?, ?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$id , $nome, $datacompra, $nomeproduto, $quantidade, $vendarealizada]);
     }
    
 
     public function listarCompragay(){
-        $sql = "SELECT * FROM eventogay";
+        $sql = "SELECT * FROM compragay";
         $stmt =$this->pdo->query($sql);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }

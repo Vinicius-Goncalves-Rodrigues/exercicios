@@ -1,17 +1,18 @@
 <?php
 
-//Configurações basicas
+//confiigurações báscas
 
 $host = 'localhost';
 $dbname = 'exer';
 $username = 'root';
-$password = '';
+$passaword = '';
 
-//conexão pdo
+//Conexão PDO
+
 try{
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;chaset=utf8", $username, $password);
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $passaword);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch(PDOException $e){
+} catch(PDOException $e) {
     die("Erro ao conectar:" . $e->getMessage());
 }
 ?>
