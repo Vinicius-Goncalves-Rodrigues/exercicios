@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/model/EnergiaModel.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/model/EnergiaModel.php';
 class EnergiaController {
     private $EnergiaModel;
     public function __construct($pdo) {
@@ -22,7 +22,7 @@ class EnergiaController {
     
     public function exibirlistarEnergia(){
         $energias = $this->EnergiaModel->listarEnergia();
-        include 'C:\aluno2\xampp\htdocs\trabalho-fixo\view\energia\listar.php';
+        include 'C:\aluno2\xampp\htdocs\exercicios\view\energia\listar.php';
     }
 
 

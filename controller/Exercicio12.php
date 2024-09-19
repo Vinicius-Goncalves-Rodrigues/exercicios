@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/aluno2/xampp/htdocs/FixacaoPHP/Exercicio12/Model/Exercicio12.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/Model/Exercicio12.php';
 
 class Exercicio12Controller
 {
@@ -22,6 +22,6 @@ class Exercicio12Controller
     public function exibirListaexercicio12s()
     {
         $exercicio12s = $this->exercicio12Model->listarexercicio12s();
-        include 'C:/aluno2/xampp/htdocs/FixacaoPHP/Exercicio12/View/listar.php';
+        include 'C:/aluno2/xampp/htdocs/exercicios/View/listar.php';
     }
 }

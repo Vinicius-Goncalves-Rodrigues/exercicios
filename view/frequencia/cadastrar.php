@@ -46,8 +46,8 @@ $porcentagem_presenca = calcularPorcentagem($frequenciaEvento, $frequenciaTotal)
 </html>
 
 <?php
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/config.php';
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/controller/FrequenciaController.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/config.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/controller/FrequenciaController.php';
 
 
 if (isset($_POST["nome"]) && isset($_POST["data_dia"]) && isset($_POST["presenca"])) {

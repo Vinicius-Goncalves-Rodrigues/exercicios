@@ -19,8 +19,8 @@
 </html>
 
 <?php
-require_once 'C:\aluno2\xampp\htdocs\FixacaoPHP\config.php';
-require_once 'C:\aluno2\xampp\htdocs\FixacaoPHP\Exercicio19\Controller\Exercicio19Controller.php';
+require_once 'C:\aluno2\xampp\htdocs\exercicios\config.php';
+require_once 'C:\aluno2\xampp\htdocs\exercicios\\Controller\Exercicio19Controller.php';
 
 if (
     isset($_POST['deposito_mensal'])

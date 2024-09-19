@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/model/HorasModel.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/model/HorasModel.php';
 class HorasController {
     private $HorasModel;
     public function __construct($pdo) {
@@ -27,7 +27,7 @@ class HorasController {
     public function exibirListaHora(){
         $horas = $this->HorasModel->listarHora();
         
-        include 'C:\aluno2\xampp\htdocs\trabalho-fixo\view\horas\listar.php';
+        include 'C:\aluno2\xampp\htdocs\exercicios\view\horas\listar.php';
     }
 }
 ?>

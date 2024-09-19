@@ -58,8 +58,8 @@
         echo "<p>A nova quilometragem após o serviço de {$tipo_manutencao} será: {$alerta_proxima_manutencao} km</p>";
 
         // Aqui você pode instanciar o controller e chamar o método para salvar no banco
-        require_once 'C:/aluno2/xampp/htdocs/FixacaoPHP/config.php';
-        require_once 'C:/aluno2/xampp/htdocs/FixacaoPHP/Exercicio12/Controller/Exercicio12.php';
+        require_once 'C:/aluno2/xampp/htdocs/exercicios/config.php';
+        require_once 'C:/aluno2/xampp/htdocs/exercicios/Controller/Exercicio12.php';
 
         $exercicio12Controller = new Exercicio12Controller($pdo);
         $exercicio12Controller->criarExercicio12(

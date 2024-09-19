@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/model/FrequenciaModel.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/model/FrequenciaModel.php';
 class FrequenciaController {
     private $FrequenciaModel;
     public function __construct($pdo) {
@@ -13,7 +13,7 @@ class FrequenciaController {
     }
     public function exibirlistarFrequencia(){
         $frequencias = $this->FrequenciaModel->listarFrequencia();
-        include 'C:\aluno2\xampp\htdocs\trabalho-fixo\view\frequencia\listar.php';
+        include 'C:\aluno2\xampp\htdocs\exercicios\view\frequencia\listar.php';
     }
 
 }

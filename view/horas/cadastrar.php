@@ -1,7 +1,7 @@
 
 <?php
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/config.php';
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/controller/HorasController.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/config.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/controller/HorasController.php';
 
 
 if (isset($_POST["nome"]) && isset($_POST["data_hora_entrada"]) && isset($_POST["data_hora_saida"])){

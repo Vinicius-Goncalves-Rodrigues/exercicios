@@ -24,8 +24,8 @@
 </html>
 
 <?php
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/config.php';
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/controller/VendaController.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/config.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/controller/VendaController.php';
 
 
 if (isset($_POST["codigo"]) && isset($_POST["nome"]) && isset($_POST["quantidade"])) {

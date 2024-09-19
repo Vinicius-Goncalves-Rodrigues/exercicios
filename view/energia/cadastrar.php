@@ -25,8 +25,8 @@
 </html>
 
 <?php
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/config.php';
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/controller/EnergiaController.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/config.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/controller/EnergiaController.php';
 
 
 if (isset($_POST["nome_residente"])) {

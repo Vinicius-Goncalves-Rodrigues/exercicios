@@ -29,8 +29,8 @@
 </html>
 
 <?php
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/config.php';
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/controller/TarefacasaController.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/config.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/controller/TarefacasaController.php';
 
 
 if (isset($_POST["tarefa"]) && isset($_POST["responsavel"]) && isset($_POST["data_inicio"])&& isset($_POST["data_final"])&& isset($_POST["statuz"])) {

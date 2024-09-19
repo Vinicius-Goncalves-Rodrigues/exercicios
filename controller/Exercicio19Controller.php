@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/aluno2/xampp/htdocs/FixacaoPHP/Exercicio19/Model/Exercicio19Model.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/Exercicio19Model.php';
 
 class Exercicio19Controller
 {
@@ -26,6 +26,6 @@ class Exercicio19Controller
     }
 public function exibirListaPoupancas(){
     $poupancas = $this->exercicio19Model->listarPoupancas();
-    include 'C:/aluno2/xampp/htdocs/FixacaoPHP/Exercicio19/View/listar.php';
+    include 'C:/aluno2/xampp/htdocs/exercicios/View/listar.php';
 }
 }

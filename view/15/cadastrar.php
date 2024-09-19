@@ -1,6 +1,6 @@
 <?php
-require_once 'C:/aluno2/xampp/htdocs/FixacaoPHP/config.php';
-require_once 'C:/aluno2/xampp/htdocs/FixacaoPHP/Exercicio15/Controller/Exercicio15Controller.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/config.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/Controller/Exercicio15Controller.php';
 
 $exercicio15Controller = new Exercicio15Controller(pdo: $pdo);
 

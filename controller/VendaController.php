@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/model/VendaModel.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/model/VendaModel.php';
 class VendaController {
     private $VendaModel;
     public function __construct($pdo) {
@@ -17,7 +17,7 @@ class VendaController {
 }
 ?>
 <?php
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/model/VendaModel.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/model/VendaModel.php';
 class EstoqueController {
     private $EstoqueModel;
     private $VendaModel;
@@ -34,7 +34,7 @@ class EstoqueController {
     public function exibirListaEstoque(){
         $estoques = $this->EstoqueModel->listarEstoque();
         $vendas = $this->VendaModel->listarVenda();
-        include 'C:\aluno2\xampp\htdocs\trabalho-fixo\view\venda\listar.php';
+        include 'C:\aluno2\xampp\htdocs\exercicios\view\venda\listar.php';
     }
 
 }

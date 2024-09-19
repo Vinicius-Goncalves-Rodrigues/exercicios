@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/aluno2/xampp/htdocs/trabalho-fixo/model/TarefacasaModel.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/model/TarefacasaModel.php';
 class TarefacasaController {
     private $TarefacasaModel;
     public function __construct($pdo) {
@@ -15,7 +15,7 @@ class TarefacasaController {
     public function exibirListaTarefa(){
         $Tarefacasas = $this->TarefacasaModel->listarTarefa();
       
-        include 'C:\aluno2\xampp\htdocs\trabalho-fixo\view\tarefacasa\listar.php';
+        include 'C:\aluno2\xampp\htdocs\exercicios\view\tarefacasa\listar.php';
     }
 
 }

@@ -1,6 +1,6 @@
 <?php
-require_once 'C:/aluno2/xampp/htdocs/FixacaoPHP/Exercicio15/Model/Exercicio15Model.php';
-require_once 'C:/aluno2/xampp/htdocs/FixacaoPHP/config.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/Model/Exercicio15Model.php';
+require_once 'C:/aluno2/xampp/htdocs/exercicios/config.php';
 
 class Exercicio15Controller
 {
